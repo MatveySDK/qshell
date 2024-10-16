@@ -1,0 +1,18 @@
+TARGET = ./build/qshell.exe
+
+HDRS_DIR = \
+	include
+
+SRC = \
+
+.PHONY: all, build, clean
+
+$(TARGET):
+	g++ -I $(HDRS_DIR) $(SRC) -o $(TARGET)
+
+all: clean build
+
+build: $(TARGET)
+
+clean:
+	rm -rf $(TARGET)
