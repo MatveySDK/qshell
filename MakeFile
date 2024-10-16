@@ -4,6 +4,10 @@ HDRS_DIR = \
 	include
 
 SRC = \
+	./src/main.cpp \
+	./src/clear.cpp \
+	./src/exit.cpp \
+	./src/help.cpp
 
 .PHONY: all, build, clean
 

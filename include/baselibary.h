@@ -1,4 +1,4 @@
-//Вспомогательные
+//base libary
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -16,13 +16,13 @@
 #include <ctime>
 #include <cstdlib>
 
-//Основные
+//.h files project
+
+
+//main libary
 #include <windows.h>
 #include <conio.h>
 #include <stdio.h>
 
-//Юзинги
+//uisngs
 using namespace std;
-
-//.h Файлы из проекта
-#include "binds.h" //Команды для выполнения кода в основном скрипте
