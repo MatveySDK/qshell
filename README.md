@@ -3,7 +3,7 @@ QShell is a program [cmd simulation] written in C++, intended for personal use a
 
 > Nerediskareal: Run preferably as Administrator
 
-![preview]()
+![preview](https://github.com/MatveySDK/qshell/blob/main/content/preview.png)
 
 ## Features
 * #clear - Command to clear a line
