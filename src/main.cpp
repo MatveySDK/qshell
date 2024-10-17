@@ -1,8 +1,8 @@
-
 #include "baselibary.h"
 #include "clear.h"
 #include "exit.h"
-#include "help.h"
+//#include "help.h"
+#include "logo.h"
 //#include "API.h"
 
 /*colors
@@ -24,7 +24,7 @@ HANDLE hConsoleInput;
 int main()
 {
     hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTitle("Shell");
+    SetConsoleTitle("qshell");
     system("cls");
 
     const int BUFFER_SIZE = 1024;
@@ -45,20 +45,25 @@ int main()
         std::cout << "\n";
 
         //Commands
-        if (std::string(buffer).find("clear") != std::string::npos) 
+        if (std::string(buffer).find("#clear") != std::string::npos) 
         {
             clearScreen();
         }
 
-        if (std::string(buffer).find("exit") != std::string::npos) 
+        if (std::string(buffer).find("#exit") != std::string::npos) 
         {
             exitProgram();
             return 1;
         }
 
-        if (std::string(buffer).find("!help") != std::string::npos) 
+        /*if (std::string(buffer).find("#help") != std::string::npos) 
         {
             help();
+        }*/
+
+        if (std::string(buffer).find("#logo") != std::string::npos) 
+        {
+            logoscreen();
         }
     }
     getchar();

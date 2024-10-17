@@ -1,4 +1,4 @@
-#include "help.h"
+/*#include "help.h"
 #include "baselibary.h"
 
 void help() 
@@ -15,4 +15,3 @@ void help()
     exit - exit program
     clear - clear text
     )"*/
-}
