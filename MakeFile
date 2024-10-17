@@ -1,4 +1,4 @@
-TARGET = ./build/qshell.exe
+TARGET = ./build/qshell/qshell.exe
 
 HDRS_DIR = \
 	include
