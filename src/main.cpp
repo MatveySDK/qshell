@@ -1,7 +1,7 @@
 #include "baselibary.h"
 #include "clear.h"
 #include "exit.h"
-//#include "help.h"
+#include "help.h"
 #include "logo.h"
 //#include "API.h"
 
@@ -23,10 +23,19 @@ HANDLE hConsoleInput;
 
 int main()
 {
+    //Text
     hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTitle("qshell");
     system("cls");
+    SetConsoleTextAttribute(hConsole, 6);
+    std::cout << "QShell is running in experimental mode, please install the correct version" << std::endl;
+    SetConsoleTextAttribute(hConsole, 4);
+    std::cout << "The configuration file is not running" << std::endl;
 
+    SetConsoleTextAttribute(hConsole, 7);
+    std::cout << "";
+
+    //Getting username
     const int BUFFER_SIZE = 1024;
     char* buffer = new char[BUFFER_SIZE];
 
@@ -44,7 +53,7 @@ int main()
         }
         std::cout << "\n";
 
-        //Commands
+        //Commands for executing commands (.h files)
         if (std::string(buffer).find("#clear") != std::string::npos) 
         {
             clearScreen();
@@ -56,10 +65,10 @@ int main()
             return 1;
         }
 
-        /*if (std::string(buffer).find("#help") != std::string::npos) 
+        if (std::string(buffer).find("#help") != std::string::npos) 
         {
             help();
-        }*/
+        }
 
         if (std::string(buffer).find("#logo") != std::string::npos) 
         {

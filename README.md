@@ -9,9 +9,9 @@ QShell is a program [cmd simulation] written in C++, intended for personal use a
 * #clear - Command to clear a line
 * #exit - exit the program
 * #logo - A stolen feature from Bash, like neofetch in Linux XD
+* #help - base help
 
 ## Curent Task
-* Returning the #help command
 * Saving command histories in history.txt file
 * Adding a cfg.jee file so you can configure commands in the program
 * Working with .bat files
