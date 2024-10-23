@@ -4,6 +4,7 @@
 #include "help.h"
 #include "logo.h"
 //#include "API.h"
+//#include "cfg.h"
 
 /*colors
     black = 0
