@@ -13,7 +13,7 @@ QShell is a program [cmd simulation] written in C++, intended for personal use a
 
 ## Curent Task
 * Saving command histories in history.txt file
-* Adding a cfg.jee file so you can configure commands in the program
+* Adding a config file so you can configure commands in the program
 * Working with .bat files
 * Reading text files
 * More Commands!
